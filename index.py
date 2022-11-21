@@ -1,7 +1,6 @@
 import streamlit as st
 import requests
 from bs4 import BeautifulSoup
-import webbrowser
 st.set_page_config(
     page_title="Web Scraper",
     page_icon="bar_chart",
@@ -26,31 +25,13 @@ if keyword:
             print(i)
             if i==0:
                 col1.image(list[0])
-                btn=col1.button("Download", key=str(index)+str(i))
-                if btn:
-                    webbrowser.open_new_tab("https://unsplash.com"+anchor["href"])
             if i==1:
                 col2.image(list[0])
-                btn=col2.button("Download", key=str(index)+str(i))
-                if btn:
-                    webbrowser.open_new_tab("https://unsplash.com"+anchor["href"])
             if i==2:
                 col3.image(list[0])
-                btn=col3.button("Download", key=str(index)+str(i))
-                if btn:
-                    webbrowser.open_new_tab("https://unsplash.com"+anchor["href"])
             if i==3:
                 col4.image(list[0])
-                btn=col4.button("Download", key=str(index)+str(i))
-                if btn:
-                    webbrowser.open_new_tab("https://unsplash.com"+anchor["href"])
             if i==4:
                 col5.image(list[0])
-                btn=col5.button("Download", key=str(index)+str(i))
-                if btn:
-                    webbrowser.open_new_tab("https://unsplash.com"+anchor["href"])  
             if i==5:
                 col6.image(list[0])
-                btn=col6.button("Download", key=str(index)+str(i))
-                if btn:
-                    webbrowser.open_new_tab("https://unsplash.com"+anchor["href"])
