@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 from bs4 import BeautifulSoup
+
 st.set_page_config(
     page_title="Web Scraper",
     page_icon="bar_chart",
